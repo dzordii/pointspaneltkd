@@ -107,4 +107,22 @@ function initTimer() {
   timerElement.innerText = formatTime(totalSeconds);
 }
 
+function zerarTimer() {
+  var timerElement = document.getElementById('timer');
+  var minutos = 1;
+  var segundos = 30;
+  var tempoTotal = minutos * 60 + segundos;
+  
+  timerElement.innerText = formatarTempo(tempoTotal);
+}
+
+function formatarTempo(segundos) {
+  var minutos = Math.floor(segundos / 60);
+  var segundosRestantes = segundos % 60;
+  
+  var tempoFormatado = minutos.toString().padStart(2, '0') + ':' + segundosRestantes.toString().padStart(2, '0');
+  
+  return tempoFormatado;
+}
+
 initTimer();
