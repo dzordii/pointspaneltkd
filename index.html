@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Placar Eletrônico</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <h1>Placar Eletrônico</h1>
@@ -15,7 +15,10 @@
         <button class="button" onclick="addPoint('red')">+1</button>
         <button class="button" onclick="addPoint('red', 2)">+2</button>
         <button class="button" onclick="addPoint('red', 3)">+3</button>
+        <button class="button" onclick="addPoint('red', 4)">+4</button>
+        <button class="button" onclick="addPoint('red', 5">+5</button>
         <button class="button" onclick="subtractPoint('red')">-1</button>
+        <button class="button" onclick="zerar('red')">Zerar</button>
       </div>
     </div>
 
@@ -27,6 +30,7 @@
         <button class="button" onclick="addPoint('blue', 2)">+2</button>
         <button class="button" onclick="addPoint('blue', 3)">+3</button>
         <button class="button" onclick="subtractPoint('blue')">-1</button>
+        <button class="button" onclick="zerar('blue')">Zerar</button>
       </div>
     </div>
   </div>
@@ -37,6 +41,6 @@
     <button class="button" id="pause-button" onclick="pauseTimer()" disabled>Pausar</button>
   </div>
 
-   <script src="script.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>

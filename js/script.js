@@ -23,6 +23,12 @@ function subtractPoint(side, points = 1) {
   scoreElement.innerText = score;
 }
 
+  //zera toda a pontuação
+function zerar(score) {
+  var scoreElement = document.getElementById(score + '-score');
+  scoreElement.innerText = 0;
+}
+
 // Função para formatar o tempo do cronômetro
 function formatTime(time) {
   var minutes = Math.floor(time / 60);
